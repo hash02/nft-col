@@ -19,7 +19,7 @@
       bool public _paused;
 
       // max number of CryptoDevs
-      uint256 public maxTokenIds = 20;
+      uint256 public maxTokenIds = 30;
 
       // total number of tokenIds minted
       uint256 public tokenIds;
@@ -44,7 +44,7 @@
        * Constructor for Crypto Devs takes in the baseURI to set _baseTokenURI for the collection.
        * It also initializes an instance of whitelist interface.
        */
-      constructor (string memory baseURI, address whitelistContract) ERC721("Crypto Devs", "CD") {
+      constructor (string memory baseURI, address whitelistContract) ERC721("Hash coin", "HC") {
           _baseTokenURI = baseURI;
           whitelist = IWhitelist(whitelistContract);
       }
